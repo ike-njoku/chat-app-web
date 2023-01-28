@@ -2,13 +2,14 @@ import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from './shared/styles/themes';
 import GlobalStyles from './shared/styles/global-styles';
+import SignUp from './shared/pages/sign-up';
 
 function App() {
   return (
     <ThemeProvider theme={DarkTheme}>
       <GlobalStyles />
       <div className="App">
-        Hello world
+        <SignUp></SignUp>
       </div>
     </ThemeProvider>
   );
