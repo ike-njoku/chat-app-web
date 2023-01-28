@@ -2,7 +2,7 @@ import './App.css';
 import { ThemeProvider } from 'styled-components';
 import { DarkTheme } from './shared/styles/themes';
 import GlobalStyles from './shared/styles/global-styles';
-import SignUp from './shared/pages/sign-up';
+import SignUp from './pages/sign-up';
 
 function App() {
   return (
