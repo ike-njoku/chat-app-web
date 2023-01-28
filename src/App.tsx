@@ -1,13 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import SignUp from './sign-up';
+import { ThemeProvider } from 'styled-components';
+import { DarkTheme } from './shared/styles/themes';
+import GlobalStyles from './shared/styles/global-styles';
 
 function App() {
   return (
-    <div className="App">
-     <SignUp />
-    </div>
+    // <ThemeProvider theme={DarkTheme}>
+      <div className="App">
+        <GlobalStyles />
+        Hello World
+      </div>
+    // </ThemeProvider>
+
   );
 }
 
