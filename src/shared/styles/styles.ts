@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  background-color: ${({theme}) => theme.primaryColor}
 `
 export const Div = styled.div<{
   backgroundColor?: string, 

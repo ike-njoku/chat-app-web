@@ -5,7 +5,7 @@ const SignUp = () => {
   return (
     <>
       <Grid>
-        <GridColumn5 style={{ backgroundColor: 'white', height: '100vh', color: 'black' }}>
+        <GridColumn5 style={{ height: '100vh', color: 'black' }}>
           <h1>Create your account</h1>
           <form>
             <Grid>
