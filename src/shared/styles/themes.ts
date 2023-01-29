@@ -1,6 +1,5 @@
 interface Theme {
   textColor?: string;
-  font?: string;
   primaryColor: string;
   secondaryColor: string;
   accentColor: string;
@@ -8,16 +7,14 @@ interface Theme {
 
 export const DarkTheme: Theme =  {
   primaryColor: '#000000',
-  secondaryColor: '',
+  secondaryColor: '#0C3025',
   accentColor: '',
-  font: '',
-  textColor: ''
+  textColor: '#ffffff'
 }
 
 export const LightTheme: Theme = {
   primaryColor: '#ffffff',
   secondaryColor: '#65FAD9',
   accentColor: '#FFB61D',
-  font: '',
-  textColor: ''
+  textColor: '#ffffff'
 }
