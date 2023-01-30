@@ -1,26 +1,25 @@
+import { APP_THEMES } from "../constants";
+
 export interface Theme {
-  textColor?: string;
+  name: string;
   primaryColor: string;
   secondaryColor: string;
   accentColor: string;
-  themeColor: string;
-  themeOpposite: string;
+  textColor: string;
 }
 
 export const DarkTheme: Theme =  {
-  primaryColor: '#000000',
-  themeColor: 'black',
-  themeOpposite: 'white',
-  secondaryColor: '#0C3025',
-  accentColor: '',
-  textColor: '#ffffff'
+  name: APP_THEMES.DARK_THEME,
+  primaryColor: "black",
+  secondaryColor: "grey",
+  accentColor: "white",
+  textColor: "white",
 }
 
 export const LightTheme: Theme = {
-  themeColor: 'white',
-  themeOpposite: 'black',
-  primaryColor: '#ffffff',
-  secondaryColor: '#65FAD9',
-  accentColor: '#FFB61D',
-  textColor: '#ffffff'
+  name: APP_THEMES.LIGHT_THEME,
+  primaryColor: "white",
+  secondaryColor: "red",
+  accentColor: "orangered",
+  textColor: "black"
 }

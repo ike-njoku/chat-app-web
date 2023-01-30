@@ -1,17 +1,30 @@
 import styled from "styled-components";
-
-export const SwitchCarousel = styled.div`
-  margin: 2px;
-  height: 25px;
-  width: 46px;
-  border-radius: 14px;
+export const SwitchCarousel = styled.label`
+  cursor: pointer;
+  margin: 3px;
+  padding: 2px;
+  width: 40px;
+  display: block;
+  border-radius: 15px;
+  transition: all 0.4s ease-in-out;
   border: solid 2px ${({theme}) => theme.primaryColor};
-  background-color: ${({theme}) => theme.primaryColor};
+  background-color: ${({theme}) => theme.textColor};
 `
-export const SwitchBall = styled.div`
+export const SwitchInput = styled.input`
+  &:checked {
+    background-color: ${({theme}) => theme.primaryColor};
+
+     & + span {
+      background-color: ${({theme}) => theme.primaryColor};
+      transform: translateX(18px);
+     }
+  }
+`
+export const SwitchKnob = styled.span`
+  display: block;
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  margin: 2px 2px 2px;
-  background-color: ${({theme}) => theme.themeOpposite};
+  background-color: ${({theme}) => theme.primaryColor};
+  transition: all 0.4s ease-in-out;
 `

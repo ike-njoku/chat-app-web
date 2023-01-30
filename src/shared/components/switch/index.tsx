@@ -1,11 +1,15 @@
-import React from 'react'
-import { SwitchBall, SwitchCarousel } from './index.styles'
+import { useState } from 'react';
+import { SwitchCarousel, SwitchInput, SwitchKnob } from './index.styles';
 
+const Switch = ({ toggleSwitch, switchIsOn }: any) => {
 
-const Switch = () => {
+  const [checked, setChecked] = useState(false);
+  const flipSwitch = (e: any) => { setChecked(e.target.checked); toggleSwitch(checked) }
+
   return (
     <SwitchCarousel>
-      <SwitchBall></SwitchBall>
+      <SwitchInput hidden onChange={flipSwitch} type="checkbox" />
+      <SwitchKnob></SwitchKnob>
     </SwitchCarousel>
   )
 }
