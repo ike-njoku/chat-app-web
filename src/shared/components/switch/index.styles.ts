@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const SwitchCarousel = styled.label`
   cursor: pointer;
-  margin: 3px;
   padding: 2px;
   width: 40px;
   display: block;

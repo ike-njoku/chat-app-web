@@ -9,7 +9,7 @@ export const Div = styled.div<{
   color?: string}
 >`
   background-color: ${({theme}) => theme.primaryColor};
-  color: ${({color}) => color ?? 'black'};
+  color: ${({theme}) => theme.textColor};
 `
 export const GridColumn5 = styled.div`
   grid-column: span 5;

@@ -6,6 +6,7 @@ export interface Theme {
   secondaryColor: string;
   accentColor: string;
   textColor: string;
+  bodyColor: string;
 }
 
 export const DarkTheme: Theme =  {
@@ -14,6 +15,7 @@ export const DarkTheme: Theme =  {
   secondaryColor: "grey",
   accentColor: "white",
   textColor: "white",
+  bodyColor: "black"
 }
 
 export const LightTheme: Theme = {
@@ -21,5 +23,6 @@ export const LightTheme: Theme = {
   primaryColor: "white",
   secondaryColor: "red",
   accentColor: "orangered",
-  textColor: "black"
+  textColor: "black",
+  bodyColor: "white"
 }
