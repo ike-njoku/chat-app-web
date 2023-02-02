@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
-h1 {
+sh1 {
   font-size: 30px;
 }
 
